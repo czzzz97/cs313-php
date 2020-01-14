@@ -1,8 +1,9 @@
 h1 {
 	font-family: helvetica;
 	text-align: center;
+	padding-top: 35px;
 	padding-bottom: 35px;
-	background-color: #4ffa00;
+	background-color: ##39b500;
 }
 
 body {
@@ -16,7 +17,7 @@ div {
 	margin-top: 15px;
 }
 
-click {
+#click {
 	margin-left: 400px;
 	margin-top: 25px;
 }

@@ -5,6 +5,6 @@ function clicked() {
 
 function changeColor() {
 	console.log("Time to change");
-	var color = document.getElementById("color").innerHTML;
+	var color = document.getElementById("color").value;
 	document.getElementById("changeable").style.color = color;
 }
