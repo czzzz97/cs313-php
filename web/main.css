@@ -1,0 +1,22 @@
+body {
+	background-color:#d1edce;
+	font-family:verdana;
+}
+
+h1 {
+	font-size:3em;
+	text-align:center;
+	text-decoration:underline;
+	text-shadow:2px 2px white;
+}
+
+#subtitle {
+	font-size:.85em;
+	text-align:center;
+	color:#465e44;
+}
+
+ul {
+	margin-left:400px;
+	font-size:1.5em;
+}
