@@ -5,8 +5,8 @@ body {
 }
 
 #phpMess {
-	font-size:.5em;
-	text-align:right;
+	font-size:.75em;
+	/*text-align:right;*/
 }
 
 h1 {
@@ -24,14 +24,14 @@ h1 {
 
 p {
 	font-size: 1em;
-	float:right;
+	/*float:right;*/
 }
 
 #big_a {
 	font-family:console;
 	font-size:6em;
 	margin: 10px 10px 10px 10px;
-	float:left;
+	/*float:left;*/
 }
 
 h3 {
@@ -43,6 +43,7 @@ h3 {
 	border:3px solid #153612;
 	border-radius:5px; 
 	margin-top:25px;
+	height:450px;
 }
 
 #roguelike {
@@ -54,7 +55,7 @@ h3 {
 }
 
 #adomPic {
-	float:left;	
+	/* float:left;	 */
 	width:600px;
 	height:400px;
 }
