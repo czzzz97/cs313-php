@@ -3,6 +3,11 @@ body {
 	font-family:verdana;
 }
 
+#phpMess {
+	font-size:.25em;
+	text-align:right;
+}
+
 h1 {
 	font-size:3em;
 	text-align:center;
@@ -14,6 +19,24 @@ h1 {
 	font-size:.85em;
 	text-align:center;
 	color:#465e44;
+}
+
+p {
+	font-size: 1em;
+	float:right;
+}
+
+#big_a {
+	font-family:console;
+	font-size:6em;
+	margin: 10px 10px 10px 10px;
+	float:left;
+}
+
+#adomPic {
+	float:left;	
+	width:600px;
+	height:200px;
 }
 
 ul {
