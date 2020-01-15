@@ -1,5 +1,5 @@
-
-<?php echo "Today is " . date("l") . ", the "; 
+<?php 
+echo "Today is " . date("l") . ", the "; 
 $day = date("d");
 if ($day > 20) {$dayR = $day % 10;} else {$dayR = $day;};
 switch ($dayR) {
@@ -55,4 +55,5 @@ switch ($month) {
 	case 12:
 		echo "December";
 		break; }
-echo " " . date("Y") . '.'; ?> 
+echo " " . date("Y") . '.'; 
+?> 

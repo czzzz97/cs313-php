@@ -39,7 +39,7 @@ h3 {
 	font-weight:bolder;
 }
 .info {
-	background-color:#27c41a;
+	background-color:#45c73a;
 	border:3px solid #153612;
 	border-radius:5px; 
 	margin-top:25px;
@@ -54,13 +54,26 @@ h3 {
 	margin-right:100px;
 }
 
+h3.info {
+	padding: 5px 5px 5px 5px;
+	background-color:#1cba0f;
+}
+
 #adomPic {
 	/* float:left;	 */
-	width:600px;
-	height:400px;
+	margin-top:10px;
+	margin-right:10px;
+	width:300px;
+	height:200px;
 }
 
 ul {
 	margin-left:400px;
 	font-size:1.5em;
+}
+
+#version {
+	font-size: .8em;
+	margin-top:10px;
+	margin-bottom:10px;
 }
