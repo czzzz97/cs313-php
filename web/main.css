@@ -1,10 +1,11 @@
 body {
 	background-color:#d1edce;
 	font-family:verdana;
+	padding-bottom:50px;
 }
 
 #phpMess {
-	font-size:.25em;
+	font-size:.5em;
 	text-align:right;
 }
 
@@ -41,6 +42,15 @@ h3 {
 	background-color:#27c41a;
 	border:3px solid #153612;
 	border-radius:5px; 
+	margin-top:25px;
+}
+
+#roguelike {
+	margin-left:100px;
+}
+
+#adom { 
+	margin-right:100px;
 }
 
 #adomPic {
