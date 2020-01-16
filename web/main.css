@@ -16,6 +16,11 @@ h1 {
 	text-shadow:2px 2px white;
 }
 
+h3 {
+	text-align:center;
+	text-shadow:2px 2px black;
+}
+
 #subtitle {
 	font-size:.85em;
 	text-align:center;
@@ -28,23 +33,29 @@ p {
 	/*float:right;*/
 }
 
-#big_a {
-	font-family:console;
-	font-size:6em;
-	margin: 10px 10px 10px 10px;
-	/*float:left;*/
-}
+
 
 h3 {
 	font-size:2.5em;
 	font-weight:bolder;
 }
 .info {
-	background-color:#45c73a;
+	padding: 5px 5px 5px 5px;
+	background-color:#1cba0f;
+	color:white;
 	border:3px solid #153612;
 	border-radius:5px; 
 	margin-top:25px;
 	height:450px;
+}
+
+#big_a {
+	color:black;
+	font-family:console;
+	font-size:6em;
+	margin-bottom:10px;
+	text-align:center;
+	/*float:left;*/
 }
 
 #roguelike {
@@ -53,19 +64,16 @@ h3 {
 
 #adom { 
 	margin-right:100px;
+	height:350px;
 }
 
-/*h3*/
-.info {
-	padding: 5px 5px 5px 5px;
-	background-color:#1cba0f;
-	color:white;
-}
 
 #adomPic {
 	/* float:left;	 */
 	margin-top:10px;
 	margin-right:10px;
+	bottom:10px;
+	left:10px;
 	width:550px;
 	height:260px;
 }
