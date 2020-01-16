@@ -1,59 +1,36 @@
-<?php 
-echo "Today is " . date("l") . ", the "; 
-$day = date("d");
-if ($day > 20) {$dayR = $day % 10;} else {$dayR = $day;};
-switch ($dayR) {
-	case 1:
-		echo $day . "st";
-		break;
-    case 2:
-		echo $day . "nd";
-		break;
-    case 3:
-		echo $day . "rd";
-		break;
-    default:
-		echo $day . "th";
-		break;
- }
-echo " of ";
-$month = date("m");
-switch ($month) {
-	case 1:
-		echo "January";
-		break;
-	case 2:
-		echo "February";
-		break;
-	case 3:
-		echo "March";
-		break;
-	case 4:
-		echo "April";
-		break;
-	case 5:
-		echo "May";
-		break;
-	case 6:
-		echo "June";
-		break;
-	case 7:
-		echo "July";
-		break;
-	case 8:
-		echo "August";
-		break;
-	case 9:
-		echo "September";
-		break;
-	case 10:
-		echo "October";
-		break;
-	case 11:
-		echo "November";
-		break;
-	case 12:
-		echo "December";
-		break; }
-echo " " . date("Y") . '.'; 
-?> 
+<!doctype html> 
+<html lang="en-US" style="height:100%">
+<head>
+<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+<p id="phpMess"><?php include 'date.php';?></p>
+
+	<h1>All About Roguelikes</h1>
+	<h2 id="subtitle">plus a <a href="assignments.html">link</a>
+	to my assignments page...</h2>
+	
+	<div id="container">
+	<div class="info" id="roguelike">
+		<h3>What is a roguelike?</h3>
+		<p id="big_a">@</p>
+		<p>This class of games, spawned in the time of text-only computers, originally
+		consisted of a purely ASCII environment. You played as a "@", and fought goblins ("g")
+		and other monsters, while grabbing gold ("$") and other items.<br>
+		Modern roguelikes often discard the ASCII graphics but maintain the other elements
+		 of roguelikes which include: random generation (no 2 playthroughs are the same), 
+		 permadeath (when your character dies, he is lost forever and you must start over),
+		  and turn-based strategy (nothing moves until you move).</p>
+	</div>
+	<div class="info" id="adom">
+		<img src="https://edge.alluremedia.com.au/m/k/2014/06/adom.png" id="adomPic" alt="ADOM">
+		<h3>Ancient Domains of Mystery</h3>
+		<p>One of the classical roguelikes, and the first I ever played. ADOM has
+		many unexplained mechanics, and difficult controls for a new player: each
+		key on the keyboard has its own action. So you press 't' to fire a bow, 's' to
+		search your surroundings...etc. It's incredibly rewarding when mastered.</p>
+	</div>
+	</div>
+	<p id="version">version 0.04</p>
+</body>
+</html>
