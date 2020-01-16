@@ -55,7 +55,8 @@ h3 {
 	margin-right:100px;
 }
 
-h3.info {
+/*h3*/
+.info {
 	padding: 5px 5px 5px 5px;
 	background-color:#1cba0f;
 	color:white;
