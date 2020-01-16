@@ -19,6 +19,7 @@ h1 {
 h3 {
 	text-align:center;
 	text-shadow:2px 2px black;
+	margin-bottom:-15px;
 }
 
 #subtitle {
@@ -38,6 +39,7 @@ p {
 h3 {
 	font-size:2.5em;
 	font-weight:bolder;
+	top:10px;
 }
 .info {
 	padding: 5px 5px 5px 5px;
@@ -60,11 +62,12 @@ h3 {
 
 #roguelike {
 	margin-left:100px;
+	height:350px;
 }
 
 #adom { 
 	margin-right:100px;
-	height:350px;
+	height:450px;
 }
 
 
