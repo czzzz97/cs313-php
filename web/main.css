@@ -6,7 +6,7 @@ body {
 
 #phpMess {
 	font-size:.75em;
-	/*text-align:right;*/
+	text-align:right;
 }
 
 h1 {
@@ -20,6 +20,9 @@ h3 {
 	text-align:center;
 	text-shadow:2px 2px black;
 	margin-bottom:-15px;
+		font-size:2.5em;
+	font-weight:bolder;
+	top:10px;
 }
 
 #subtitle {
@@ -34,13 +37,11 @@ p {
 	/*float:right;*/
 }
 
-
-
-h3 {
-	font-size:2.5em;
-	font-weight:bolder;
-	top:10px;
+#shrink {
+	width:30%;
+	float:right;
 }
+
 .info {
 	padding: 5px 5px 5px 5px;
 	background-color:#1cba0f;
@@ -55,6 +56,7 @@ h3 {
 	color:black;
 	font-family:console;
 	font-size:6em;
+	margin-top:-50px;
 	margin-bottom:10px;
 	text-align:center;
 	/*float:left;*/
@@ -81,7 +83,7 @@ h3 {
 	height:260px;
 }
 
-ul {
+ul,li {
 	margin-left:400px;
 	font-size:1.5em;
 }
@@ -90,4 +92,5 @@ ul {
 	font-size: .8em;
 	margin-top:10px;
 	margin-bottom:10px;
+	text-align:right;
 }

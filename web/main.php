@@ -25,12 +25,12 @@
 	<div class="info" id="adom">
 		<img src="https://edge.alluremedia.com.au/m/k/2014/06/adom.png" id="adomPic" alt="ADOM">
 		<h3>Ancient Domains of Mystery</h3>
-		<p>One of the classical roguelikes, and the first I ever played. ADOM has
+		<p id="shrink">One of the classical roguelikes, and the first I ever played. ADOM has
 		many unexplained mechanics, and difficult controls for a new player: each
 		key on the keyboard has its own action. So you press 't' to fire a bow, 's' to
 		search your surroundings...etc. It's incredibly rewarding when mastered.</p>
 	</div>
 	</div>
-	<p id="version">version 0.04</p>
+	<p id="version">version 0.15</p>
 </body>
 </html>
