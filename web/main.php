@@ -31,6 +31,6 @@
 		search your surroundings...etc. It's incredibly rewarding when mastered.</p>
 	</div>
 	</div>
-	<p id="version">version 0.17</p>
+	<p id="version">version 0.18</p>
 </body>
 </html>
