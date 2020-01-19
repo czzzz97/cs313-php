@@ -31,15 +31,15 @@ h3 {
 	color:#465e44;
 }
 
+a:hover {
+	font-weight:bold;
+	color:forestgreen;
+}
+
 p {
 	font-size: 1em;
 	margin-bottom:10px;
 	/*float:right;*/
-}
-
-#shrink {
-	max-width:40%;
-	float:right;
 }
 
 .info {
@@ -49,10 +49,11 @@ p {
 	border:3px solid #153612;
 	border-radius:5px; 
 	margin-top:25px;
-	height:450px;
+	height:auto;
 }
 
 #big_a {
+	display:none;
 	color:black;
 	font-family:console;
 	font-size:6em;
@@ -76,7 +77,8 @@ p {
 #adomPic {
 	/* float:left;	 */
 	margin-top:10px;
-	margin-right:10px;
+	margin-right:auto;
+	margin-left:auto;
 	bottom:10px;
 	/*left:10px;*/
 	right:10px;
