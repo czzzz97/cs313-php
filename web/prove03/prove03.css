@@ -36,7 +36,11 @@ header {
 }
 
 #address {
-	float:right;
+	/* float:right; */
+}
+
+#address p {
+	text-align:right;
 }
 
 div.container {

@@ -60,10 +60,10 @@
 <div id="address" class="yourOrder">
 	<form>
 	<h3>Delivery address information</h3>
-	<p>Street<input></input></p>
-	<p>City<input></input></p>
-	<p>State<input></input></p>
-	<p>ZIP Code<input></input></p>
+	<p>Street <input></input></p>
+	<p>City <input></input></p>
+	<p>State <input></input></p>
+	<p>ZIP Code <input></input></p>
 	</form>
 </div>
 

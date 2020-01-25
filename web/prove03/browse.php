@@ -25,7 +25,7 @@
   <div class="desc">Samurai Sword</div>
   
   <div class="price">$24.99
-  <button id="addSamurai"><span class="fas fa-cart-plus"></span></button>
+  <button id="addSamurai"><i class="fas fa-cart-plus"></i></button>
   </div>
 </div>
 
