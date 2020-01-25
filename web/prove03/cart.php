@@ -8,7 +8,7 @@
 <header>
 	<div class="nav">
 	<form action="checkout.php" method="post">
-	<input id="orderCart" name="orderCart"><?php print $_POST["order"];?></input>
+	<input id="orderCart" name="orderCart" value="<?php echo $_POST["order"];?>"></input>
 	<button type="submit">Proceed to checkout</button>
 	</form>
 	<button onclick="location.href='browse.php'" type="button">Cancel order and browse</button>
@@ -56,7 +56,7 @@
 				break;
 		}
 	}
-	echo "<br><p>\$" . $total . ": TOTAL</p>";?> 
+	echo "<b><p>\$" . $total . ": TOTAL</p></b>";?> 
 </div>
 
 </body>
