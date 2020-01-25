@@ -13,7 +13,7 @@
 	<h2>for stage, practice, or display</h2>
 </header>
 	<h3>Your order:</h3>
-	<p></p>
+	<p><?php echo $_POST["order"];?></p>
 	<form>
 	<h3>Delivery address information</h3>
 	<p>Street</p><input></input>

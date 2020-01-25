@@ -7,10 +7,13 @@
 <body>
 <header>
 	<div class="nav">
-	<a href="checkout.php">Proceed to checkout</a>
+	<form action="checkout.php" method="post">
+	<input id=orderCart name="order"><?php echo $_POST["order"];?></input>
+	<button type="submit">Proceed to checkout</button>
+	</form>
 	</div>
 	<div class="nav">
-	<a href="browse.php">Browse more items</a>
+	<button onclick="location.href='browse.php'" type="button">Cancel order and browse</button>
 	</div>
 	<h1>Replica Weapons</h1>
 	<h2>for stage, practice, or display</h2>
@@ -21,23 +24,15 @@
 		<tr>
 			<td>Price</td>
 			<td>Item</td>
-			<td></td>
-			<td>Quantity</td>
-			<td></td>
 		</tr>
 		<tr>
 			<td>$9.99</td>
 			<td>Example Item</td>
-			<td>+</td>
-			<td>2</td>
-			<td>-</td>
 		</tr>
+		<tr><td></td><td></td></tr>
 		<tr>
 			<td>$20.44</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
+			<td>total</td>
 		</tr>
 	</table>
 

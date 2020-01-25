@@ -99,7 +99,8 @@
 
 <script>
 var order = [];
-var items = 0;
+var items = -1;
+updateItems();
 
 document.getElementById("addSamurai").addEventListener("click", function(){ order.push("samurai");updateItems();});
 document.getElementById("addSpartan").addEventListener("click", function(){ order.push("spartan");updateItems();});
