@@ -16,8 +16,9 @@
 	<h1>Replica Weapons</h1>
 	<h2>for stage, practice, or display</h2>
 </header>
+<div class="yourOrder">
 	<h3>Your order:</h3>
-	<?php $list = explode(",", $_POST["order"];
+	<?php $list = explode(",", $_POST["order"]);
 	$total = 0.00;
 	foreach ($order as $item) {
 		switch($item) {
@@ -56,6 +57,7 @@
 		}
 	}
 	echo "<p>" . $total . "</p>";?> 
+</div>
 
 </body>
 </html>
