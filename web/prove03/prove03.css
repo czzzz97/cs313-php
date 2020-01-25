@@ -35,6 +35,10 @@ header {
 	border-radius:7px;
 }
 
+#address {
+	float:right;
+}
+
 div.container {
 	width:80%;
 	height:auto;
@@ -85,4 +89,6 @@ button:hover {
 button {
 	background-color:#02d3f2;
 	padding:2px;
+	margin:auto;
+	margin-bottom:1px;
 }
