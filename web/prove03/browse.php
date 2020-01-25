@@ -6,26 +6,31 @@
 <script>
 var order = [];
 var items = 0;
-document.getElementById("addSamurai").addEventListener("click", function(){ order.push("samurai");updateItems();});
-document.getElementById("addSpartan").addEventListener("click", function(){ order.push("spartan");updateItems();});
-document.getElementById("addKnight").addEventListener("click", function(){ order.push("knight");updateItems();});
-document.getElementById("addFencing").addEventListener("click", function(){ order.push("fencing");updateItems();});
-document.getElementById("addViking").addEventListener("click", function(){ order.push("viking");updateItems();});
-document.getElementById("addCompound").addEventListener("click", function(){ order.push("compound");updateItems();});
-document.getElementById("addBattleaxe").addEventListener("click", function(){ order.push("battleaxe");updateItems();});
-document.getElementById("addLongbow").addEventListener("click", function(){ order.push("longbow");updateItems();});
+document.getElementById("addSamurai").addEventListener("click", function(){updateItems();});
+//document.getElementById("addSamurai").addEventListener("click", function(){ order.push("samurai");updateItems();});
+//document.getElementById("addSpartan").addEventListener("click", function(){ order.push("spartan");updateItems();});
+//document.getElementById("addKnight").addEventListener("click", function(){ order.push("knight");updateItems();});
+//document.getElementById("addFencing").addEventListener("click", function(){ order.push("fencing");updateItems();});
+//document.getElementById("addViking").addEventListener("click", function(){ order.push("viking");updateItems();});
+//document.getElementById("addCompound").addEventListener("click", function(){ order.push("compound");updateItems();});
+//document.getElementById("addBattleaxe").addEventListener("click", function(){ order.push("battleaxe");updateItems();});
+//document.getElementById("addLongbow").addEventListener("click", function(){ order.push("longbow");updateItems();});
 
 function updateItems() {
 	items += 1;
 	document.getElementById("numItems").innerHTML = items;
+	document.getElementById("order").value = order;
 }
 </script>
 </head>
 <body>
 <header>
 	<div class="nav">
+	<form action="cart.php" method="post">
+	<input id="order"></input>
 	<p><span id="numItems"></span> items in cart.</p>
-	<a href="cart.php">View cart/Checkout</a>
+	<button type="submit">View cart/Checkout</button>
+	</form>
 	</div>
 	
 	<h1>Replica Weapons</h1>
