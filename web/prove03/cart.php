@@ -26,7 +26,7 @@
 		$id = "button" . $idNum;
 		switch($item) {
 			case "samurai":
-				echo "<p>\$24.99 - Samurai Sword <button id=\"" . $id .  "\" onclick=\"document.getElementById(" . $id . ").style.display=\"none\" type=\"button\">" . 
+				echo "<p>\$24.99 - Samurai Sword <button id=\"" . $id .  "\" onclick=\"document.getElementById(" . $id . ").style.display=\"none\"\" type=\"button\">" . 
 				"<i class=\"fas fa-trash\"></i></button></p>";
 				$total += 24.99;
 				break;
