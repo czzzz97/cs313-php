@@ -18,6 +18,10 @@ header {
 	padding:10px;
 }
 
+#order {
+	display:none;
+}
+
 div.container {
 	width:80%;
 	height:auto;

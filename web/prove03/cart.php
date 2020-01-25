@@ -16,7 +16,8 @@
 	<h2>for stage, practice, or display</h2>
 </header>
 	<h3>Your order:</h3>
-	<table id="order">
+	<?php echo  $_POST["order"];?> 
+	<table id="cart">
 		<tr>
 			<td>Price</td>
 			<td>Item</td>
