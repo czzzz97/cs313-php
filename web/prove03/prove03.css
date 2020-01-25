@@ -24,17 +24,30 @@ div.container {
 	margin:auto;
 }
 
+div.nav {
+	margin:5px;
+	padding:5px;
+	border: 1.5px solid #083840;
+	border-radius:5px;
+	float: right;
+	width: auto;
+	height:auto;
+	background-color:#d7dbdb;
+}
+
 div.gallery {
   margin: 10px;
   border: 1.5px solid #083840;
   border-radius:5px;
   float: left;
   width: 180px;
+  background-color:#d7dbdb;
 }
 
 div.gallery img {
   width: 100%;
   height: auto;
+  padding:2px;
 }
 
 div.desc {
@@ -44,6 +57,7 @@ div.desc {
 
 div.price {
 	float:right;
+	margin-right:5px;
 	background-color:#c0c4c4;
 }
 

@@ -6,6 +6,11 @@
 </head>
 <body>
 <header>
+	<div class="nav">
+	<!--<p><span id="numItems"></span> items in cart.</p>-->
+	<a href="cart.php">View cart/Checkout</a>
+	</div>
+	
 	<h1>Replica Weapons</h1>
 	<h2>for stage, practice, or display</h2>
 </header>
@@ -18,7 +23,6 @@
   <div class="price">$24.99
   <button id="addSamurai"><span class="fas fa-cart-plus"></span></button>
   </div>
-  
 </div>
 
 <div class="gallery">
@@ -27,7 +31,8 @@
   
   <div class="price">$29.99
   <button id="addSpartan"><span class="fas fa-cart-plus"></span></button>
-  </div>
+  </div> 
+</div>  
   
 <div class="gallery">
     <img src="https://swordskingdom.com/media/catalog/product/cache/1/thumbnail/1000x/17f82f742ffe127f42dca9de82fb58b1/b/l/black-glamdring-sword-of-gandalf-replica-from-lotr.jpg" alt="knight" width="600" height="400">
@@ -36,8 +41,26 @@
   <div class="price">$34.99
   <button id="addKnight"><span class="fas fa-cart-plus"></span></button>
   </div>  
+</div> 
+
+<div class="gallery">
+    <img src="https://mcishop.azureedge.net/mciassets/w_5_0021227_the-holy-sword-of-fernando-iii_550.png" alt="fencing" width="600" height="400">
+  <div class="desc">Fencing Rapier</div>
   
-</div>
+  <div class="price">$22.99
+  <button id="addFencing"><span class="fas fa-cart-plus"></span></button>
+  </div>  
+
+<div class="gallery">
+    <img src="https://media.entertainmentearth.com/assets/images/063885fa4c3e4822a1b18ac245244d50lg.jpg" alt="viking" width="600" height="400">
+  <div class="desc">Viking Waraxe</div>
+  
+  <div class="price">$26.99
+  <button id="addNorse"><span class="fas fa-cart-plus"></span></button>
+  </div>  
+  
+</div> 
+ 
 </div>
 
 
