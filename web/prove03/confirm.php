@@ -7,9 +7,8 @@
 <body>
 <header>
 	<div class="nav">
-	<form action="cart.php" method="post">
-	<input id="order" name="order" value="<?php echo $_POST["orderCart"];?>"></input>
-	<button type="submit">Return to cart</button>
+	<form action="browse.php" method="post">
+	<button type="submit">Return to browsing</button>
 	</form>
 	</div>
 	<h1>Replica Weapons</h1>
@@ -58,15 +57,12 @@
 	echo "<b><p>\$" . $total . ": TOTAL</p></b>";?> 
 </div>
 <div id="address" class="yourOrder">
-	<form action="confirm.php" method="post">
 	<h3>Delivery address information</h3>
-	<p>Street <input name="street"></input></p>
-	<p>City <input name="city"></input></p>
-	<p>State <input name="state"></input></p>
-	<p>ZIP Code <input name="zip"></input></p>
-	<input id="orderCart" name="orderCart" value="<?php echo $_POST["orderCart"];?>"></input>
-	<button type="submit">Confirm Purchase</button>
-	</form>
+	<p>Street: <?php echo $_POST["street"]?></p>
+	<p>City: <?php echo $_POST["city"]?></p>
+	<p>State: <?php echo $_POST["state"]?></p>
+	<p>ZIP Code: <?php echo $_POST["zip"]?></p>
+	<p><b>Thank you for your order!</b></p>
 </div>
 
 </body>

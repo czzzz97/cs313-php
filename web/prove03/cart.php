@@ -23,35 +23,43 @@
 	foreach ($list as $item) {
 		switch($item) {
 			case "samurai":
-				echo "<p>\$24.99 - Samurai Sword <i class=\"fas fa-trash\"></i></p>";
+				echo "<p>\$24.99 - Samurai Sword <button type=\"button\">" . 
+				"<i class=\"fas fa-trash\"></i></button></p>";
 				$total += 24.99;
 				break;
 			case "spartan":
-				echo "<p>\$29.99 - Spartan Gladius <i class=\"fas fa-trash\"></i></p>";
+				echo "<p>\$29.99 - Spartan Gladius <button type=\"button\">" . 
+				"<i class=\"fas fa-trash\"></i></button></p>";
 				$total += 29.99;
 				break;
 			case "knight":
-				echo "<p>\$34.99 - Knight's Longsword <i class=\"fas fa-trash\"></i></p>";
+				echo "<p>\$34.99 - Knight's Longsword <button type=\"button\">" . 
+				"<i class=\"fas fa-trash\"></i></button></p>";
 				$total += 34.99;
 				break;
 			case "fencing":
-				echo "<p>\$22.99 - Fencing Rapier <i class=\"fas fa-trash\"></i></p>";
+				echo "<p>\$22.99 - Fencing Rapier <button type=\"button\">" . 
+				"<i class=\"fas fa-trash\"></i></button></p>";
 				$total += 22.99;
 				break;
 			case "viking":
-				echo "<p>\$26.99 - Viking Waraxe <i class=\"fas fa-trash\"></i></p>";
+				echo "<p>\$26.99 - Viking Waraxe <button type=\"button\">" . 
+				"<i class=\"fas fa-trash\"></i></button></p>";
 				$total += 26.99;
 				break;	
 			case "compound":
-				echo "<p>\$32.99 - Compound Bow <i class=\"fas fa-trash\"></i></p>";
+				echo "<p>\$32.99 - Compound Bow <button type=\"button\">" . 
+				"<i class=\"fas fa-trash\"></i></button></p>";
 				$total += 32.99;
 				break;
 			case "battleaxe":
-				echo "<p>\$25.99 - Battleaxe <i class=\"fas fa-trash\"></i></p>";
+				echo "<p>\$25.99 - Battleaxe <button type=\"button\">" . 
+				"<i class=\"fas fa-trash\"></i></button></p>";
 				$total += 25.99;
 				break;
 			case "longbow":
-				echo "<p>\$28.99 - Traditional Longbow <i class=\"fas fa-trash\"></i></p>";
+				echo "<p>\$28.99 - Traditional Longbow <button type=\"button\">" . 
+				"<i class=\"fas fa-trash\"></i></button></p>";
 				$total += 28.99;
 				break;
 		}
