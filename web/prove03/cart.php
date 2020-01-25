@@ -20,10 +20,13 @@
 	<h3>Your order:</h3>
 	<?php $list = explode(",", $_POST["order"]);
 	$total = 0.00;
+	$idNum = -1;
 	foreach ($list as $item) {
+		$idNum += 1;
+		$id = "button" . $idNum;
 		switch($item) {
 			case "samurai":
-				echo "<p>\$24.99 - Samurai Sword <button type=\"button\">" . 
+				echo "<p>\$24.99 - Samurai Sword <button id=\"" . $id .  "\" onclick=\"document.getElementById(" . $id . ").style.display=\"none\" type=\"button\">" . 
 				"<i class=\"fas fa-trash\"></i></button></p>";
 				$total += 24.99;
 				break;
