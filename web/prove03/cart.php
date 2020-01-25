@@ -7,10 +7,10 @@
 <body>
 <header>
 	<div class="nav">
-	<a href="browse.php">Browse more items</a>
+	<a href="checkout.php">Proceed to checkout</a>
 	</div>
 	<div class="nav">
-	<a href="checkout.php">Proceed to checkout</a>
+	<a href="browse.php">Browse more items</a>
 	</div>
 	<h1>Replica Weapons</h1>
 	<h2>for stage, practice, or display</h2>

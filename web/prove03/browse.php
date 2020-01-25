@@ -3,11 +3,28 @@
 <head>
 <script src="https://kit.fontawesome.com/a23918c4fb.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" type="text/css" href="prove03.css">
+<script>
+var order = [];
+var items = 0;
+document.getElementById("addSamurai").addEventListener("click", function(){ order.push("samurai");updateItems();});
+document.getElementById("addSpartan").addEventListener("click", function(){ order.push("spartan");updateItems();});
+document.getElementById("addKnight").addEventListener("click", function(){ order.push("knight");updateItems();});
+document.getElementById("addFencing").addEventListener("click", function(){ order.push("fencing");updateItems();});
+document.getElementById("addViking").addEventListener("click", function(){ order.push("viking");updateItems();});
+document.getElementById("addCompound").addEventListener("click", function(){ order.push("compound");updateItems();});
+document.getElementById("addBattleaxe").addEventListener("click", function(){ order.push("battleaxe");updateItems();});
+document.getElementById("addLongbow").addEventListener("click", function(){ order.push("longbow");updateItems();});
+
+function updateItems() {
+	items += 1;
+	document.getElementById("numItems").innerHTML = items;
+}
+</script>
 </head>
 <body>
 <header>
 	<div class="nav">
-	<!--<p><span id="numItems"></span> items in cart.</p>-->
+	<p><span id="numItems"></span> items in cart.</p>
 	<a href="cart.php">View cart/Checkout</a>
 	</div>
 	
@@ -44,23 +61,53 @@
 </div> 
 
 <div class="gallery">
-    <img src="https://mcishop.azureedge.net/mciassets/w_5_0021227_the-holy-sword-of-fernando-iii_550.png" alt="fencing" width="600" height="400">
+    <img src="https://images-na.ssl-images-amazon.com/images/I/31kdcGzSieL._SX425_.jpg" alt="fencing" width="600" height="400">
   <div class="desc">Fencing Rapier</div>
   
   <div class="price">$22.99
   <button id="addFencing"><span class="fas fa-cart-plus"></span></button>
-  </div>  
+  </div>
+</div>  
 
 <div class="gallery">
     <img src="https://media.entertainmentearth.com/assets/images/063885fa4c3e4822a1b18ac245244d50lg.jpg" alt="viking" width="600" height="400">
   <div class="desc">Viking Waraxe</div>
   
   <div class="price">$26.99
-  <button id="addNorse"><span class="fas fa-cart-plus"></span></button>
+  <button id="addViking"><span class="fas fa-cart-plus"></span></button>
   </div>  
+</div> 
+
+<div class="gallery">
+    <img src="https://www.cosplayinspire.com/media/catalog/product/cache/1/image/1200x1200/b71367d728d91e800ca570447f5dce11/o/l/oliver-queen-green-arrow-season-5-weapon-cosplay-replica-bow-buy.jpg" alt="compound" width="600" height="400">
+  <div class="desc">Compound Bow</div>
   
+  <div class="price">$32.99
+  <button id="addCompound"><span class="fas fa-cart-plus"></span></button>
+  </div>  
+</div> 
+
+<div class="gallery">
+    <img src="https://swordskingdom.com/media/catalog/product/cache/1/thumbnail/1000x/17f82f742ffe127f42dca9de82fb58b1/g/i/gimli-battle-axe-replica-gold-plated.jpg" alt="battleaxe" width="600" height="400">
+  <div class="desc">Battleaxe</div>
+  
+  <div class="price">$25.99
+  <button id="addBattleaxe"><span class="fas fa-cart-plus"></span></button>
+  </div>  
+</div> 
+
+<div class="gallery">
+    <img src="https://herocity.de/en/wp-content/uploads/2018/08/xucu40322-800x793.jpg" alt="longbow" width="600" height="400">
+  <div class="desc">Longbow Traditional</div>
+  
+  <div class="price">$28.99
+  <button id="addLongbow"><span class="fas fa-cart-plus"></span></button>
+  </div>  
 </div> 
  
+ 
+
+
 </div>
 
 
