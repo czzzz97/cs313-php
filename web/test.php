@@ -12,7 +12,7 @@ try
   $dbName = ltrim($dbOpts["path"],'/');
 
   $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-
+<?php
   $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
 catch (PDOException $ex)
@@ -27,3 +27,4 @@ foreach ($db->query('SELECT title, price FROM game') as $row)
   echo ' game: ' . $row['game'];
   echo '<br/>';
 }
+?>
