@@ -25,7 +25,7 @@
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="#">Add New Data</a>
+        <a class="nav-link" href="addData.php">Add New Data</a>
       </li>   
     </ul>
   </div>  
@@ -49,7 +49,8 @@
 	  </form>
       <hr class="d-sm-none">
     </div>
-      
+     <div class="col-sm-8">
+	 </div>
 <div class="jumbotron text-center">
   <p>Dedicated to helping you find what you're looking for.</p>
   <!--<a href="#">Back To Top</a>-->

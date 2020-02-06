@@ -54,6 +54,9 @@
 <?php
 require('dbConnect.php');
 
+echo $_POST[searchBy];
+echo $_POST[search];
+
 if ($_POST[searchBy] = 'author'){
 foreach ($db->query('SELECT game.price, game.title, author.name FROM game INNER JOIN author ON
 game.author_id = author.author_id WHERE author.name = \'' . $_POST[search] . '\'') as $row) {
