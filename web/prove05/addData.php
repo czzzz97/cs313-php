@@ -34,22 +34,20 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
-      <h2>Find Your Game</h2>
-      <p>search games by title, price, author, platform...</p>
-	  <form action="search.php" method="post">
-		<label for="searchBy">Search By:</label>
-		<select name="searchBy">
-			<option value="title">Title</option>
-			<option value="price">Price</option>
-			<option value="platform">Platform</option>
-			<option value="author">Author</option>
+      <h2>Add A Game</h2>
+      <p>please include all information available</p>
+	  <form action="action.php" method="post">
+			<label for="title">Title</label><input type="text" name="title">
+			<label for="price">Price</label><input type="text" name="price">
+			<label for="platform">Platform</label><input type="text" name="platform">
+			<label for="author">Author</label><input type="text" name="author">
 		</select><br>
-		<input type="text" name="search">
-		<button type="submit">Search</button>
+		<button type="submit">Add</button>
 	  </form>
       <hr class="d-sm-none">
     </div>
-      
+    <div class="col-sm-8">
+    </div>
 <div class="jumbotron text-center">
   <p>Dedicated to helping you find what you're looking for.</p>
   <!--<a href="#">Back To Top</a>-->
