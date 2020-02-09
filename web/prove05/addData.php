@@ -41,7 +41,7 @@
 			<label for="price">Price</label><input type="text" name="price">
 			<label for="platform">Platform</label><input type="text" name="platform">
 			<label for="author">Author</label><input type="text" name="author">
-		</select><br>
+		<br>
 		<button type="submit">Add</button>
 	  </form>
       <hr class="d-sm-none">
