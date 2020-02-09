@@ -28,7 +28,7 @@ require('dbConnect.php');
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="#">Add New Data</a>
+        <a class="nav-link" href="addData.php">Add New Data</a>
       </li>   
     </ul>
   </div>  

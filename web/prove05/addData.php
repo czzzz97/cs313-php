@@ -25,7 +25,7 @@
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="#">Add New Data</a>
+        <a class="nav-link" href="addData.php">Add New Data</a>
       </li>   
     </ul>
   </div>  
@@ -37,11 +37,10 @@
       <h2>Add A Game</h2>
       <p>please include all information available</p>
 	  <form action="action.php" method="post">
-			<label for="title">Title</label><input type="text" name="title">
-			<label for="price">Price</label><input type="text" name="price">
-			<label for="platform">Platform</label><input type="text" name="platform">
-			<label for="author">Author</label><input type="text" name="author">
-		<br>
+			<label for="title">Title</label><input type="text" name="title"><br>
+			<label for="price">Price</label><input type="text" name="price"><br>
+			<label for="platform">Platform</label><input type="text" name="platform"><br>
+			<label for="author">Author</label><input type="text" name="author"><br>
 		<button type="submit">Add</button>
 	  </form>
       <hr class="d-sm-none">
