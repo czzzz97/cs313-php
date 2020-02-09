@@ -44,10 +44,10 @@ require('dbConnect.php');
     <div class="col-sm-4">
       <h2>Browse for Games</h2>
 <?php
-foreach ($db->query('SELECT title, price, release_date, last_update FROM game') as $row)
+foreach ($db->query('SELECT title, price, last_update FROM game ORDER BY price') as $row)
 {
-  echo $row['price'] . ' | ' . $row['title'] . ', released ' . $row['release_date'];
-  echo ' and last updated ' . $row['last_update'] . '<br/>';
+  echo $row['price'] . ' | <b>' . $row['title'] . '</b>,';
+  echo ' last updated ' . $row['last_update'] . '<br>';
 }
 ?>
       <hr class="d-sm-none">

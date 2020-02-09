@@ -25,9 +25,9 @@ foreach ($db->query('SELECT title, price FROM game') as $row)
 {
   echo $row['title'] . ' costs ';
   echo $row['price'];
-  echo '<br/>';
+  echo '<br>';
 }
-echo '<br/>';
+echo '<br>';
 
 $stmt = $db->prepare('SELECT * FROM author WHERE id=:id AND name=:name');
 $stmt->bindValue(':id', $id, PDO::PARAM_INT);
