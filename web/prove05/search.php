@@ -59,13 +59,26 @@ require('dbConnect.php');
 if ($_POST['searchBy'] = 'author'){
 foreach ($db->query('SELECT game.price, game.title, author.name FROM game INNER JOIN author ON
 game.author_id = author.author_id WHERE author.name = \'' . $_POST['search'] . '\'') as $row) {
-  echo $row['price'] . ' | ' . $row['game.title'] . ' - by ' . $row['author.name'];
+  echo $row['price'] . ' | ' . $row['title'] . ' - by ' . $row['name'];
   echo '<br/>';
 }}
 else if ($_POST['searchBy'] = 'title'){
 foreach ($db->query('SELECT game.price, game.title, author.name FROM game INNER JOIN author ON
 game.author_id = author.author_id WHERE game.title = \'' . $_POST['search'] . '\'') as $row) {
-  echo $row['game.price'] . ' | ' . $row['game.title'] . ' - by ' . $row['author.name'];
+  echo $row['price'] . ' | ' . $row['title'] . ' - by ' . $row['name'];
+  echo '<br/>';
+}}
+else if ($_POST['searchBy'] = 'price'){
+foreach ($db->query('SELECT game.price, game.title, author.name FROM game INNER JOIN author ON
+game.author_id = author.author_id WHERE game.price <= ' . $_POST['search']) as $row) {
+  echo $row['price'] . ' | ' . $row['title'] . ' - by ' . $row['name'];
+  echo '<br/>';
+}}
+else if ($_POST['searchBy'] = 'platform'){
+foreach ($db->query('SELECT game.price, game.title FROM game INNER JOIN game_platform ON game.game_id =
+ game_platform.game_id WHERE game_platform.platform_id = (SELECT platform.platform_id FROM 
+ platform WHERE platform.platform = \'' . $_POST['search'] . '\')') as $row) {
+  echo $row['price'] . ' | ' . $row['title'] . ' - available for ' . $_POST['search'];
   echo '<br/>';
 }}
 

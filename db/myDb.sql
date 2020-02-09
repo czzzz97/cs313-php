@@ -79,6 +79,7 @@ VALUES (
 ,'https://en.wikipedia.org/wiki/Edmund_McMillen'
 ,'edmundmcmillen@gmail.com'
 );
+INSERT INTO author(name) VALUES ('Kornel Kisielewicz');
 
 INSERT INTO tags(
 tags
@@ -106,6 +107,54 @@ VALUES (
 ,'Has actual sprites, etc. Not ASCII or at the very least has a graphical tileset.'
 );
 
+INSERT INTO game(
+title
+,link
+,price
+,release_date
+,last_update
+,author_id
+)
+VALUES (
+'DoomRL'
+,'http://doom.chaosforge.org/'
+,0.00
+,'2003-09-20'
+,'2013-03-13'
+,(SELECT author_id FROM author WHERE name = 'Kornel Kisielewicz')
+);
+INSERT INTO game(
+title
+,link
+,price
+,release_date
+,last_update
+,author_id
+)
+VALUES (
+'DiabloRL'
+,'http://diablo.chaosforge.org/'
+,0.00
+,'2005-08-20'
+,'2013-03-20'
+,(SELECT author_id FROM author WHERE name = 'Kornel Kisielewicz')
+);
+INSERT INTO game(
+title
+,link
+,price
+,release_date
+,last_update
+,author_id
+)
+VALUES (
+'AliensRL'
+,'http://alien.chaosforge.org/'
+,0.00
+,'2007-03-18'
+,'2012-09-08'
+,(SELECT author_id FROM author WHERE name = 'Kornel Kisielewicz')
+);
 INSERT INTO game(
 title
 ,link
