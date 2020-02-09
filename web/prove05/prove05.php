@@ -47,7 +47,7 @@ require('dbConnect.php');
 foreach ($db->query('SELECT title, price, release_date, last_update FROM game') as $row)
 {
   echo $row['price'] . ' | ' . $row['title'] . ', released ' . $row['release_date'];
-  echo ' and last updated ' . $row['last_update'] . echo '<br/>';
+  echo ' and last updated ' . $row['last_update'] . '<br/>';
 }
 ?>
       <hr class="d-sm-none">
