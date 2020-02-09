@@ -55,6 +55,14 @@ require('dbConnect.php');
     <div class="col-sm-8">
 		
 <?php
+foreach ($db->query('SELECT title, price FROM game') as $row)
+{
+  echo $row['title'] . ' costs ';
+  echo $row['price'];
+  echo '<br/>';
+}
+
+echo var_dump($_POST);
 
 if ($_POST['searchBy'] = 'author'){
 foreach ($db->query('SELECT game.price, game.title, author.name FROM game INNER JOIN author ON
