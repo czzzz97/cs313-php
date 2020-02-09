@@ -62,19 +62,19 @@ game.author_id = author.author_id WHERE author.name = \'' . $_POST['search'] . '
   echo $row['price'] . ' | ' . $row['title'] . ' - by ' . $row['name'];
   echo '<br/>';
 }}
-else if ($_POST['searchBy'] = 'title'){
+if ($_POST['searchBy'] = 'title'){
 foreach ($db->query('SELECT game.price, game.title, author.name FROM game INNER JOIN author ON
 game.author_id = author.author_id WHERE game.title = \'' . $_POST['search'] . '\'') as $row) {
   echo $row['price'] . ' | ' . $row['title'] . ' - by ' . $row['name'];
   echo '<br/>';
 }}
-else if ($_POST['searchBy'] = 'price'){
+if ($_POST['searchBy'] = 'price'){
 foreach ($db->query('SELECT game.price, game.title, author.name FROM game INNER JOIN author ON
-game.author_id = author.author_id WHERE game.price <= ' . $_POST['search']) as $row) {
+game.author_id = author.author_id WHERE game.price < ' . $_POST['search']) as $row) {
   echo $row['price'] . ' | ' . $row['title'] . ' - by ' . $row['name'];
   echo '<br/>';
 }}
-else if ($_POST['searchBy'] = 'platform'){
+if ($_POST['searchBy'] = 'platform'){
 foreach ($db->query('SELECT game.price, game.title FROM game INNER JOIN game_platform ON game.game_id =
  game_platform.game_id WHERE game_platform.platform_id = (SELECT platform.platform_id FROM 
  platform WHERE platform.platform = \'' . $_POST['search'] . '\')') as $row) {
