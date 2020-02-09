@@ -15,9 +15,9 @@ require('dbConnect.php');
 </head>
 <body>
 
-<div class="jumbotron text-center">
+<div class="jumbotron text-center header">
   <h1>Ultimate Roguelike Database</h1>
-  <p>Axes high!</p> 
+  <p>You search your surroundings. You discover a hidden door!</p> 
 </div>
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
