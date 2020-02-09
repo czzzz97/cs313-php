@@ -21,10 +21,15 @@ require('dbConnect.php');
 </div>
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <a class="navbar-brand" href="prove05.php">Search</a>
+  <a class="navbar-brand" href="prove05.php">Browse</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="search.php">Search</a>
+      </li>
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
       <li class="nav-item">
@@ -82,14 +87,6 @@ foreach ($db->query('SELECT game.price, game.title FROM game INNER JOIN game_pla
   echo '<br/>';
 }}
 
-/*
-foreach ($db->query('SELECT ' . , price FROM game') as $row)
-{
-  echo $row['title'] . ' costs ';
-  echo $row['price'];
-  echo '<br/>';
-}
-*/
 ?>
     </div>  
 <div class="jumbotron text-center">

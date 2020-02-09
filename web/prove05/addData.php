@@ -18,10 +18,15 @@
 </div>
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <a class="navbar-brand" href="prove05.php">Search</a>
+  <a class="navbar-brand" href="prove05.php">Browse</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="search.php">Search</a>
+      </li>
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
       <li class="nav-item">
@@ -33,15 +38,15 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-sm-4">
+    <div class="col-sm-4 adder">
       <h2>Add A Game</h2>
       <p>please include all information available</p>
 	  <form action="action.php" method="post">
-			<label for="title">Title</label><input type="text" name="title"><br>
-			<label for="price">Price</label><input type="text" name="price"><br>
-			<label for="platform">Platform</label><input type="text" name="platform"><br>
-			<label for="author">Author</label><input type="text" name="author"><br>
-		<button type="submit">Add</button>
+			<label for="title">Title </label><input type="text" name="title"><br>
+			<label for="price">Price </label><input type="text" name="price"><br>
+			<label for="platform">Platform </label><input type="text" name="platform"><br>
+			<label for="author">Author </label><input type="text" name="author"><br>
+		<button class="primary" type="submit">Add</button>
 	  </form>
       <hr class="d-sm-none">
     </div>

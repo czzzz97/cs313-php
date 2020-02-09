@@ -1,3 +1,6 @@
+<?php
+require('dbConnect.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,15 +21,15 @@
 </div>
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <a class="navbar-brand" href="prove05.php">Search</a>
+  <a class="navbar-brand" href="prove05.php">Browse</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <!--<div class="collapse navbar-collapse" id="collapsibleNavbar">
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="addData.php">Browse</a>
-      </li>-->
+        <a class="nav-link" href="search.php">Search</a>
+      </li>
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
       <li class="nav-item">
@@ -39,19 +42,14 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
-      <h2>Find Your Game</h2>
-      <p>search games by title, price, author, platform...</p>
-	  <form action="search.php" method="post">
-		<label for="searchBy">Search By:</label>
-		<select name="searchBy">
-			<option value="title">Title</option>
-			<option value="price">Price</option>
-			<option value="platform">Platform</option>
-			<option value="author">Author</option>
-		</select><br>
-		<input type="text" name="search">
-		<button type="submit">Search</button>
-	  </form>
+      <h2>Browse for Games</h2>
+<?php
+foreach ($db->query('SELECT title, price, release_date, last_update FROM game') as $row)
+{
+  echo $row['price'] . ' | ' . $row['title'] . ', released ' . $row['release_date'];
+  echo ' and last updated ' . $row['last_update'] . echo '<br/>';
+}
+?>
       <hr class="d-sm-none">
     </div>
      <div class="col-sm-8">
