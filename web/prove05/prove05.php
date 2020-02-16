@@ -44,10 +44,14 @@ require('dbConnect.php');
     <div class="col-sm-4">
       <h2>Browse for Games</h2>
 <?php
-foreach ($db->query('SELECT title, price, last_update FROM game ORDER BY price') as $row)
+foreach ($db->query('SELECT title, price, FROM game ORDER BY price, title') as $row)
 {
-  echo $row['price'] . ' | <b>' . $row['title'] . '</b>,';
-  echo ' last updated ' . $row['last_update'] . '<br>';
+  if ($row['price'] < .1){
+	  echo 'FREE';
+  } else {
+  echo '\$' . $row['price'];
+  }
+  echo ' | <b>' . $row['title'] . '</b><br>';
 }
 ?>
       <hr class="d-sm-none">

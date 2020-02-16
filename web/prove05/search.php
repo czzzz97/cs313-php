@@ -43,14 +43,13 @@ require('dbConnect.php');
   <div class="row">
     <div class="col-sm-4">
       <h2>Find Your Game</h2>
-      <p>search games by title, price, author, platform...</p>
+      <p>search games by title, price, platform...</p>
 	  <form action="search.php" method="post">
 		<label for="searchBy">Search By:</label>
 		<select name="searchBy">
 			<option value="title">Title</option>
 			<option value="price">Price</option>
 			<option value="platform">Platform</option>
-			<option value="author">Author</option>
 		</select><br>
 		<input type="text" name="search">
 		<button type="submit">Search</button>
@@ -60,33 +59,32 @@ require('dbConnect.php');
     <div class="col-sm-8">
 		
 <?php
+$searchBy = $_POST['searchBy'];
+$search = $_POST['search'];
+$db = get_db();
 
-if ($_POST['searchBy'] = 'author'){
-foreach ($db->query('SELECT game.price, game.title, author.name FROM game INNER JOIN author ON
-game.author_id = author.author_id WHERE author.name = \'' . $_POST['search'] . '\'') as $row) {
-  echo $row['price'] . ' | ' . $row['title'] . ' - by ' . $row['name'];
-  echo '<br>';
-}}
-if ($_POST['searchBy'] = 'title'){
-foreach ($db->query('SELECT game.price, game.title, author.name FROM game INNER JOIN author ON
-game.author_id = author.author_id WHERE game.title = \'' . $_POST['search'] . '\'') as $row) {
-  echo $row['price'] . ' | ' . $row['title'] . ' - by ' . $row['name'];
-  echo '<br>';
-}}
-if ($_POST['searchBy'] = 'price'){
-foreach ($db->query('SELECT game.price, game.title, author.name FROM game INNER JOIN author ON
-game.author_id = author.author_id WHERE game.price < ' . $_POST['search']) as $row) {
-  echo $row['price'] . ' | ' . $row['title'] . ' - by ' . $row['name'];
-  echo '<br>';
-}}
-if ($_POST['searchBy'] = 'platform'){
-foreach ($db->query('SELECT game.price, game.title FROM game INNER JOIN game_platform ON game.game_id =
- game_platform.game_id WHERE game_platform.platform_id = (SELECT platform.platform_id FROM 
- platform WHERE platform.platform = \'' . $_POST['search'] . '\')') as $row) {
-  echo $row['price'] . ' | ' . $row['title'] . ' - available for ' . $_POST['search'];
-  echo '<br>';
-}}
+try
+{
+	if ($searchBy = 'title'){
+		$query = 'SELECT title, price FROM game WHERE title = \'' . $search . '\'';
+		$statement = $db->prepare($query);
+		$check = $statement->execute();
+		echo $check;
+		}	
+	}
+	else if ($searchBy = 'platform'){
+	}
+	else if ($searchBy = 'price'){
+	}
+	
 
+}
+catch (Exception $ex)
+{
+	echo "<script>console.log('error... " . $ex . "')</script>";
+	die();
+}
+die();
 ?>
     </div>  
 <div class="jumbotron text-center">
