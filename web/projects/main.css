@@ -1,0 +1,97 @@
+body {
+	background-color:#d1edce;
+	font-family:verdana;
+	padding-bottom:50px;
+}
+
+#phpMess {
+	font-size:.75em;
+	text-align:right;
+}
+
+h1 {
+	font-size:3em;
+	text-align:center;
+	text-decoration:underline;
+	text-shadow:2px 2px white;
+}
+
+h3 {
+	text-align:center;
+	text-shadow:2px 2px black;
+	/*margin-bottom:-15px;*/
+		font-size:2.5em;
+	font-weight:bolder;
+	top:10px;
+}
+
+#subtitle {
+	font-size:.85em;
+	text-align:center;
+	color:#465e44;
+}
+
+a:hover {
+	font-weight:bold;
+	color:forestgreen;
+}
+
+p {
+	font-size: 1em;
+	margin-bottom:10px;
+	/*float:right;*/
+}
+
+.info {
+	padding: 5px 5px 5px 5px;
+	background-color:#1cba0f;
+	color:white;
+	border:3px solid #153612;
+	border-radius:5px; 
+	margin-top:25px;
+}
+
+#big_a {
+	display:none;
+	color:black;
+	font-family:console;
+	font-size:6em;
+	/*margin-top:-50px;*/
+	margin-bottom:10px;
+	text-align:center;
+	/*float:left;*/
+}
+
+#roguelike {
+	margin-left:100px;
+	height:auto;
+}
+
+#adom { 
+	margin-right:100px;
+	height:auto;
+}
+
+
+#adomPic {
+	/* float:left;	 */
+	margin-top:10px;
+	margin-right:auto;
+	margin-left:auto;
+	bottom:10px;
+	/*left:10px;*/
+	width:550px;
+	height:260px;
+}
+
+ul,li {
+	margin-left:400px;
+	font-size:1.5em;
+}
+
+#version {
+	font-size: .8em;
+	margin-top:10px;
+	margin-bottom:10px;
+	text-align:right;
+}
