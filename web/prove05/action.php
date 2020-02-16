@@ -22,12 +22,14 @@ try
 	$statement = $db->prepare($query);
 	$check = $statement->execute();
 	
-	$query = 'INSERT INTO game(title, price, author) VALUES(:title, :price, :author)';
+	$query = 'INSERT INTO game(title, price, author, release_date, link) VALUES(:title, :price, :author, :release_date, :link)';
 	$statement = $db->prepare($query);
 
 	$statement->bindValue(':title', $title);
 	$statement->bindValue(':price', $price);
 	$statement->bindValue(':author', $check);
+	$statement->bindValue(':release_date', '01-01-01');
+	$statement->bindValue(':link', 'http://www.google.com');
 	
 	$statement->execute();
 
