@@ -70,9 +70,11 @@ try
 		$statement = $db->prepare($query);
 		$statement->bindValue(':search', $search, PDO::PARAM_STR);
 		$statement->execute();
-		echo $statement->fetchAll();
-		echo var_dump($statement);
-		echo var_dump($statement->fetchAll());
+		
+		echo $statement . '<br>';
+		echo $statement->fetchAll() . '<br>';
+		echo var_dump($statement) . '<br>';
+		echo var_dump($statement->fetchAll()) . '<br>';
 	}	
 	else if ($searchBy = 'platform'){
 	}
