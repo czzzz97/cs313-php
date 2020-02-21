@@ -66,10 +66,11 @@ $search = $_POST['search'];
 try
 {
 	if ($searchBy = 'title'){
-		$query = 'SELECT title, price FROM game WHERE title = \'' . $search . '\'';
+		$query = 'SELECT title, price FROM game WHERE title = :search';
 		$statement = $db->prepare($query);
-		$check = $statement->execute();
-		echo $check;
+		$statement->bindValue(':search', $search, PDO::PARAM_STR);
+		$statement->execute();
+		echo $statement->fetchAll();
 	}	
 	else if ($searchBy = 'platform'){
 	}
