@@ -41,7 +41,7 @@ require('dbConnect.php');
 
 <div class="container">
   <div class="row">
-    <div class="col-sm-4">
+    <div class="col-sm-1">
       <h2>Browse for Games</h2>
 <?php
 foreach ($db->query('SELECT title, price FROM game ORDER BY price, title') as $row)
@@ -49,7 +49,7 @@ foreach ($db->query('SELECT title, price FROM game ORDER BY price, title') as $r
   if ($row['price'] < .1){
 	  echo 'FREE';
   } else {
-  echo '\$' . $row['price'];
+  echo '$' . $row['price'];
   }
   echo ' | <b>' . $row['title'] . '</b><br>';
 }
