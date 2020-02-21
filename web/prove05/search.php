@@ -41,7 +41,7 @@ require('dbConnect.php');
 
 <div class="container">
   <div class="row">
-    <div class="col-sm-4">
+    <div class="col-sm-8">
       <h2>Find Your Game</h2>
       <p>search games by title, price, platform...</p>
 	  <form action="search.php" method="post">
@@ -81,7 +81,7 @@ try
 }
 catch (Exception $ex)
 {
-	echo "<script>console.log('error... " . $ex . "')</script>";
+	echo $ex;
 	die();
 }
 die();

@@ -38,7 +38,7 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-sm-4 adder">
+    <div class="col-sm-8 adder">
       <h2>Add A Game</h2>
       <p>please include all information available</p>
 	  <form action="action.php" method="post">
