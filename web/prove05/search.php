@@ -62,7 +62,6 @@ if (isset($_POST['search'])){
 	
 $searchBy = $_POST['searchBy'];
 $search = $_POST['search'];
-$db = get_db();
 
 try
 {
@@ -71,14 +70,11 @@ try
 		$statement = $db->prepare($query);
 		$check = $statement->execute();
 		echo $check;
-		}	
-	}
+	}	
 	else if ($searchBy = 'platform'){
 	}
 	else if ($searchBy = 'price'){
 	}
-	
-
 }
 catch (Exception $ex)
 {
