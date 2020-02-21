@@ -71,6 +71,8 @@ try
 		$statement->bindValue(':search', $search, PDO::PARAM_STR);
 		$statement->execute();
 		
+		$r = $statement->fetchAll();
+		echo $r['title'];
 		echo $statement->fetchAll();
 		echo 'fffff<br>';
 		echo var_dump($statement);
