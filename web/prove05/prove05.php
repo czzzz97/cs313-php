@@ -44,7 +44,7 @@ require('dbConnect.php');
     <div class="col-sm-4">
       <h2>Browse for Games</h2>
 <?php
-foreach ($db->query('SELECT title, price, FROM game ORDER BY price, title') as $row)
+foreach ($db->query('SELECT title, price FROM game ORDER BY price, title') as $row)
 {
   if ($row['price'] < .1){
 	  echo 'FREE';
