@@ -59,32 +59,7 @@ require('dbConnect.php');
     <div class="col-sm-8">
 		
 <?php
-$searchBy = $_POST['searchBy'];
-$search = $_POST['search'];
-$db = get_db();
 
-try
-{
-	if ($searchBy = 'title'){
-		$query = 'SELECT title, price FROM game WHERE title = \'' . $search . '\'';
-		$statement = $db->prepare($query);
-		$check = $statement->execute();
-		echo $check;
-		}	
-	}
-	else if ($searchBy = 'platform'){
-	}
-	else if ($searchBy = 'price'){
-	}
-	
-
-}
-catch (Exception $ex)
-{
-	echo $ex;
-	die();
-}
-die();
 ?>
     </div>  
 <div class="jumbotron text-center">
