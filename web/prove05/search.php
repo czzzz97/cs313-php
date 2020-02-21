@@ -72,6 +72,7 @@ try
 		$statement->execute();
 		echo $statement->fetchAll();
 		echo var_dump($statement);
+		echo var_dump($statement->fetchAll());
 	}	
 	else if ($searchBy = 'platform'){
 	}
