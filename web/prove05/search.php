@@ -72,7 +72,9 @@ try
 		$statement->execute();
 		
 		$r = $statement->fetchAll();
-		
+		echo $r[0]['title'] . '@';
+		echo $r[0][1] . '@';
+		echo $r[1][0] . '@';
 		echo '<b>RESULTS:</b><br><br>'
 		if ($r[0]['price'] < .1){
 			echo 'FREE';
