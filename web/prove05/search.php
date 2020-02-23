@@ -80,7 +80,7 @@ try
 			echo '$' . $r[0]['price'];
 			}
 			echo ' | <b>' . $r[0]['title'] . '</b><br>';
-		} else { echo '<b>Sorry, no results were found!</b>'}
+		} else { echo '<b>Sorry, no results were found!</b>';}
 	}	
 	else if ($searchBy = 'platform'){
 	}
@@ -99,7 +99,7 @@ try
 			echo '$' . $r[0]['price'];
 			}
 			echo ' | <b>' . $r[0]['title'] . '</b><br>';
-		} else { echo '<b>Sorry, no results were found!</b>'}
+		} else { echo '<b>Sorry, no results were found!</b>';}
 	}
 }
 catch (Exception $ex)
