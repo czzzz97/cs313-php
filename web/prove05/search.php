@@ -73,8 +73,8 @@ try
 		
 		$r = $statement->fetchAll();
 		
-		echo $r[0]['title'] . '1000';
-		echo $r[0][0] . '2000';
+		echo $r[0]['title'] . '<br>';
+		echo $r[0]['price'];
 		
 	}	
 	else if ($searchBy = 'platform'){
