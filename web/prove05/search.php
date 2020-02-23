@@ -72,13 +72,15 @@ try
 		$statement->execute();
 		
 		$r = $statement->fetchAll();
-		echo '<b>RESULTS:</b><br>';
-		if ($r[0]['price'] < .1){
-			echo 'FREE';
-		} else {
-		echo '$' . $r[0]['price'];
-		}
-		echo ' | <b>' . $r[0]['title'] . '</b><br>';
+		if (isset($r[0]['price'])){
+			echo '<b>RESULTS:</b><br>';
+			if ($r[0]['price'] < .1){
+				echo 'FREE';
+			} else {
+			echo '$' . $r[0]['price'];
+			}
+			echo ' | <b>' . $r[0]['title'] . '</b><br>';
+		} else { echo '<b>Sorry, no results were found!</b>'}
 	}	
 	else if ($searchBy = 'platform'){
 	}
@@ -89,13 +91,15 @@ try
 		$statement->execute();
 		
 		$r = $statement->fetchAll();
-		echo '<b>RESULTS:</b><br>';
-		if ($r[0]['price'] < .1){
-			echo 'FREE';
-		} else {
-		echo '$' . $r[0]['price'];
-		}
-		echo ' | <b>' . $r[0]['title'] . '</b><br>';
+		if (isset($r[0]['price'])){
+			echo '<b>RESULTS:</b><br>';
+			if ($r[0]['price'] < .1){
+				echo 'FREE';
+			} else {
+			echo '$' . $r[0]['price'];
+			}
+			echo ' | <b>' . $r[0]['title'] . '</b><br>';
+		} else { echo '<b>Sorry, no results were found!</b>'}
 	}
 }
 catch (Exception $ex)
