@@ -74,14 +74,14 @@ try
 		$r = $statement->fetchAll();
 		echo $r[0]['title'] . '@';
 		echo $r[0][1] . '@';
-		echo $r[0][2];
+		#echo $r[0][2];
 		echo '<b>RESULTS:</b><br><br>'
-		if ($r[0]['price'] < .1){
-			echo 'FREE';
-		} else {
-		echo '$' . $r[0]['price'];
-		}
-		echo ' | <b>' . $r[0]['title'] . '</b><br>';
+		#if ($r[0]['price'] < .1){
+		#	echo 'FREE';
+		#} else {
+		#echo '$' . $r[0]['price'];
+		#}
+		#echo ' | <b>' . $r[0]['title'] . '</b><br>';
 	}	
 	else if ($searchBy = 'platform'){
 	}
