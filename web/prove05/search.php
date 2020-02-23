@@ -65,6 +65,9 @@ $search = $_POST['search'];
 
 try
 {
+	## even when searchBy is supposed to be price, it goes into title
+	echo $_POST['searchBy'] . echo $searchBy;
+	
 	if ($searchBy = 'title'){
 		$query = 'SELECT title, price FROM game WHERE title = :search';
 		$statement = $db->prepare($query);
