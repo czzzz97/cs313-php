@@ -90,7 +90,8 @@ try
 		$statement->bindValue(':search', $search, PDO::PARAM_INT);
 		$statement->execute();
 		
-		$r = $statement->fetchAll();
+		$r = $statement->fetch();
+		echo $r[0];
 		echo $r[0][0];
 		echo $r[0][1];
 		if (isset($r[0]['price'])){
