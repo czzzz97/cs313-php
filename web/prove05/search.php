@@ -91,6 +91,8 @@ try
 		$statement->execute();
 		
 		$r = $statement->fetchAll();
+		echo $r[0]['price'];
+		echo $r[0]['title'];
 		if (isset($r[0]['price'])){
 			echo '<b>RESULTS:</b><br>';
 			if ($r[0]['price'] < .1){
