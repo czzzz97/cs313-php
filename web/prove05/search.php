@@ -92,6 +92,7 @@ try
 		
 		$r = $statement->fetch();
 		echo $r;
+		echo var_dump($r);
 		echo $r[0];
 		echo $r[0][0];
 		echo $r[0][1];
