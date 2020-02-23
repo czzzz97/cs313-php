@@ -104,7 +104,8 @@ try
 			echo '$' . $r[0]['price'];
 			}
 			echo ' | <b>' . $r[0]['title'] . '</b><br>';
-		} else { echo '<b>Sorry, no results were found!</b>';}
+		} else { echo '<b>Sorry, no results were found!</b>'
+		. '!!!!!!!!!!!!!!!!!!!TEST!!!!!!!!!!!!!!!!!!!!';}
 	}
 }
 catch (Exception $ex)
