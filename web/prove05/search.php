@@ -85,7 +85,7 @@ try
 	else if ($searchBy = 'price'){
 		$query = 'SELECT title, price FROM game WHERE price < :search';
 		$statement = $db->prepare($query);
-		$statement->bindValue(':search', $search, PDO::PARAM_STR);
+		$statement->bindValue(':search', $search, PDO::PARAM_INT);
 		$statement->execute();
 		
 		$r = $statement->fetchAll();
