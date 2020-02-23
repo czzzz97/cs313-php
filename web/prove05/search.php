@@ -72,9 +72,10 @@ try
 		$statement->execute();
 		
 		$r = $statement->fetchAll();
+		echo '<b>RESULTS:</b><br><br>'
+		echo '$' . $r[0]['price'] . '|<b>' . $r[0]['title'] . '</b><br>';
+	
 		
-		echo $r[0]['title'] . '<br>';
-		echo $r[0]['price'];
 		
 	}	
 	else if ($searchBy = 'platform'){
