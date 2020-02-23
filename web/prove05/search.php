@@ -72,8 +72,9 @@ try
 		$statement->execute();
 		
 		$r = $statement->fetchAll();
-		echo $r['title'] . '$$$';
 		echo $r[0] . '###';
+		echo $r[0]['title'] . '1000';
+		echo $r[0][0] . '2000';
 		echo $statement->fetchAll();
 		echo 'fffff<br>';
 		echo var_dump($statement);
