@@ -91,6 +91,7 @@ try
 		$statement->execute();
 		
 		$r = $statement->fetch();
+		echo $r;
 		echo $r[0];
 		echo $r[0][0];
 		echo $r[0][1];
