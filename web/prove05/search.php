@@ -72,16 +72,18 @@ try
 		$statement->execute();
 		
 		$r = $statement->fetchAll();
-		echo $r[0]['title'] . '@';
-		echo $r[0][1] . '@';
-		#echo $r[0][2];
-		echo '<b>RESULTS:</b><br><br>'
-		#if ($r[0]['price'] < .1){
-		#	echo 'FREE';
-		#} else {
-		#echo '$' . $r[0]['price'];
-		#}
-		#echo ' | <b>' . $r[0]['title'] . '</b><br>';
+		echo $r[0] . '###';
+		echo $r[0]['title'] . '1000';
+		echo $r[0][0] . '2000';
+		echo $statement->fetchAll();
+		echo 'fffff<br>';
+		echo var_dump($statement);
+		echo 'fffff<br>';
+		echo var_dump($statement->fetchAll());
+		echo 'fffff<br>';
+		echo $statement->execute();
+		echo 'fffff<br>';
+		echo $statement;
 	}	
 	else if ($searchBy = 'platform'){
 	}
