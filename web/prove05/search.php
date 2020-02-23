@@ -66,7 +66,7 @@ $search = $_POST['search'];
 try
 {
 
-	echo $_POST['searchBy'] . echo $searchBy;
+	echo $_POST['searchBy'] . $searchBy;
 	
 	if ($searchBy = 'title'){
 		$query = 'SELECT title, price FROM game WHERE title = :search';
