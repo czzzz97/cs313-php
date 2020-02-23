@@ -83,6 +83,19 @@ try
 	else if ($searchBy = 'platform'){
 	}
 	else if ($searchBy = 'price'){
+		$query = 'SELECT title, price FROM game WHERE price < :search';
+		$statement = $db->prepare($query);
+		$statement->bindValue(':search', $search, PDO::PARAM_STR);
+		$statement->execute();
+		
+		$r = $statement->fetchAll();
+		echo '<b>RESULTS:</b><br>';
+		if ($r[0]['price'] < .1){
+			echo 'FREE';
+		} else {
+		echo '$' . $r[0]['price'];
+		}
+		echo ' | <b>' . $r[0]['title'] . '</b><br>';
 	}
 }
 catch (Exception $ex)
